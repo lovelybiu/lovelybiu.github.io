@@ -1,1 +1,80 @@
+:root {
+    --background-color: rgb(224, 191, 184);
+    --border-color: rgb(255, 255, 255, 0.1)
+}
 
+body {
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0px;
+    overflow: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid var(--border-color);
+}
+
+nav > .nav-section {
+    padding: 3rem 2rem;
+    display: flex;
+    gap: 1rem;
+    border-left: 1px solid var(--border-color);
+    align-items: center;
+    justify-content: center;
+}
+
+#nav-logo-section,
+#nav-link-section {
+    flex-basis: calc(100% / 3);
+}
+
+#nav-social-section,
+#nav-contact-section {
+    flex-grow: 1;
+}
+
+#nav-logo-section {
+    justify-content: flex-start;
+    font-size: 1.3rem;
+}
+
+#nav-link-section {
+    gap: 6rem;
+}
+
+#nav-social-section {
+    gap: 3rem;
+}
+
+h1, h2, h3, a, p, span {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Other styles */
