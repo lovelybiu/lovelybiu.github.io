@@ -71,6 +71,13 @@ main {
     flex-grow: 1;
 }
 
+main > article {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr 1fr;
+}
+
 main > article > .article-description-section,
 main > article > .article-nav-section {
     border-left: 1px solid var(--border-color);
@@ -81,28 +88,13 @@ main > article > .article-nav-section {
     border-top: 1px solid var(--border-color);
 }
 
-
-main > article {
-    display: grid;
-    height: 100%;
-    grid-template-columns: 2fr 1fr;
-    grid-auto-rows: 2fr 1fr;
-}
-
 main > article > .article-image-section {
+    background-size: cover;
+    background-position-y: bottom;
+    background-position-x: center;
     height: 100%;
-    width: 100%;
     overflow: hidden;
-    align-items: center;
-    justify-content: center;
 }
 
 /* Other styles */
-.article-image-section img {
-    vertical-align: middle;
-    display: inline-block;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+
