@@ -89,11 +89,11 @@ main > article > .article-nav-section {
 }
 
 main > article > .article-image-section {
+    height: 100%;
+    overflow: hidden;
     background-size: cover;
     background-position-y: bottom;
     background-position-x: center;
-    height: 100%;
-    overflow: hidden;
 }
 
 /* Other styles */
